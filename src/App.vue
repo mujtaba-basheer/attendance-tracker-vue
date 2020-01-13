@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div>
+    <div class="date-label">
       <date-label />
     </div>
     <div>
@@ -29,9 +29,5 @@ export default {
 </script>
 
 <style lang="scss">
-  #app {
-    width: 50%;
-    border: 1px solid red;
-    float: auto;
-  }
+  
 </style>

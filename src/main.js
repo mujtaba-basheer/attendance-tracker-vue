@@ -4,6 +4,7 @@ import { routes } from './routes';
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter);
+// Vue.use( Vuetify);
 
 const router = new VueRouter({
   mode: 'history',

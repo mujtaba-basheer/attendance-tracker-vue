@@ -1,15 +1,8 @@
 <template>
-    <div class="date-label">
+    <div class="date-stamp">
         {{ date }}
     </div>
 </template>
-
-<style scoped>
-    .date-label {
-        padding: 3 px;
-        background-color: aquamarine;
-    }
-</style>
     
 <script>
 

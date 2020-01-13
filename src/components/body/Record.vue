@@ -1,21 +1,21 @@
 <template>
   <div>
-    <div>
-      <select v-model="selDay" @click="selectDay()" >
+    <div class="select-day">
+      <select v-model="selDay" @click="selectDay()" class="drop-down" >
         <option v-for="(day, index) in days" :value="index" :key="index">
-          {{ day }}
+          <span class="opt">{{ day }}</span>
         </option>
       </select>
     </div>
 
-    <div>
+    <div class="subs-track">
       <table>
         <tr v-for="(sub, index) in subs" :key="index">
-          <td>{{ index + 1 }}</td>
-          <td>{{ sub.sub }}</td>
-          <td>
-            <span><button @click="Record(sub.subId, 'present')">Present</button></span>
-            <span><button @click="Record(sub.subId, 'absent')">Absent</button></span>
+          <td class="record-tbl">{{ index + 1 }}</td>
+          <td class="record-tbl">{{ sub.sub }}</td>
+          <td class="record-tbl">
+            <span><button class="record-btn" @click="Record(sub.subId, 'present')">Present</button></span>
+            <span><button class="record-btn" @click="Record(sub.subId, 'absent')">Absent</button></span>
           </td>
         </tr>
       </table>

@@ -1,0 +1,143 @@
+#app {
+    width: 570px;
+    border: 5px solid black;
+    float: auto;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+
+.date-label {
+  padding: 5px;
+  background-color: black;
+}
+
+.date-stamp {
+  padding: 3px;
+  background-color: #ffffff;
+  font-family: "Roboto Mono", monospace;
+  color: black;
+}
+
+.spa-body {
+  padding: 5px;
+  background-color: #ffff;
+  margin: 5px;
+}
+
+.nav-btns {
+  padding: 5px;
+  margin: 5px;
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+}
+
+.main-content {
+  padding: 5px;
+  margin: 3px;
+  border: 5px solid black;
+}
+
+.select-day {
+  padding: 5px;
+  margin: 5px;
+}
+
+.subs-track {
+  padding: 5px;
+  margin: 5px;
+}
+
+table {
+  padding: 3px;
+  border-spacing: 0px;
+  max-width: 1000px;
+}
+
+tr {
+  padding: 3px;
+}
+
+.tbl-body {
+  padding: 3px;
+  font-family: "Jaldi", sans-serif;
+}
+
+button,
+.drop-down {
+  background-color: white; /* Green */
+  border: 2px solid black;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Bree Serif", serif;
+}
+
+.tbl-head {
+  font-family: "Bitter", serif;
+  color: #ffff;
+  background-color: black;
+}
+
+td {
+  border: 2px solid black;
+}
+
+.nav-link {
+  margin: 10px;
+  border: 3px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 7px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-left: 65px;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: black;
+}
+
+.record-tbl {
+  font-size: 20px;
+  font-family: "Roboto Mono", monospace;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.record-btn {
+  padding: 5px 5px;
+  border-radius: 8px;
+  font-size: 20px;
+}
+
+.drop-down:hover,
+.record-btn:hover {
+  background-color: black;
+  color: #ffff;
+}
+
+.drop-down:focus,
+.record-btn:focus {
+  outline: none;
+}
+
+.dd-content .opt:hover {
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+}
+
+.stats-main {
+    font-family: "Roboto Mono", monospace;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 5px;;
+}
+
+.isLow {
+    color: red;
+}
