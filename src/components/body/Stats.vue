@@ -31,7 +31,7 @@ export default {
         }
     },
     created () {
-        axios.get('http://127.0.0.1:5000/api/getSubs')
+        axios.get('https://fierce-falls-54022.herokuapp.com/api/getSubs')
         .then(res => {
             this.subjects = res.data.docs;
         })

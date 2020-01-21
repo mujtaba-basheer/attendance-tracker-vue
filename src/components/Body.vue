@@ -19,6 +19,6 @@ export default {
     components: {
         record: Record,
         stats: Stats,
-    }
+    },
 }
 </script>

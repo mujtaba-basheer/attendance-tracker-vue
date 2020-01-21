@@ -4,7 +4,10 @@
       <date-label />
     </div>
     <div>
-      <view-body />
+      <div>
+        <input type="password" v-model="password" v-if="!isAuth" placeholder="Enter Password">
+      </div>
+      <view-body v-if="isAuth" />
     </div>
   </div>
 </template>
@@ -18,12 +21,21 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'Welcome to Your Vue.js App',
+      isAuth: false,
+      password: ''
     }
   },
   components: {
     dateLabel: Label,
     viewBody: Body,
+  },
+  watch: {
+    password: function () {
+      if (this.password === 'Mujtaba') {
+        this.isAuth = true;
+      }
+    }
   }
 }
 </script>

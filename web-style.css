@@ -1,5 +1,5 @@
 #app {
-    width: 90%;
+    width: 570px;
     border: 5px solid black;
     float: auto;
     padding: 10px;
@@ -14,23 +14,21 @@
 }
 
 .date-stamp {
-  padding: 15px;
+  padding: 3px;
   background-color: #ffffff;
   font-family: "Roboto Mono", monospace;
-  font-size: 25px;
   color: black;
 }
 
 .spa-body {
   padding: 5px;
   background-color: #ffff;
-  margin: 15px;
+  margin: 5px;
 }
 
 .nav-btns {
   padding: 5px;
-  margin-left: 175px;
-  margin-bottom: 25px;
+  margin: 5px;
   font-family: "Teko", sans-serif;
   font-size: 40px;
 }
@@ -55,7 +53,6 @@ table {
   padding: 3px;
   border-spacing: 0px;
   max-width: 1000px;
-  margin: auto;
 }
 
 tr {
@@ -72,11 +69,11 @@ button,
   background-color: white; /* Green */
   border: 2px solid black;
   color: black;
-  padding: 15px 15px;
+  padding: 10px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 35px;
+  font-size: 15px;
   font-family: "Bree Serif", serif;
 }
 
@@ -84,7 +81,6 @@ button,
   font-family: "Bitter", serif;
   color: #ffff;
   background-color: black;
-  font-size: 25px;
 }
 
 td {
@@ -100,7 +96,6 @@ td {
   padding-top: 0px;
   padding-bottom: 0px;
   margin-left: 65px;
-  font-size: 50px;
 }
 
 .nav-link:hover {
@@ -109,16 +104,16 @@ td {
 }
 
 .record-tbl {
-  font-size: 35px;
+  font-size: 20px;
   font-family: "Roboto Mono", monospace;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .record-btn {
   padding: 5px 5px;
   border-radius: 15px;
-  font-size: 35px;
+  font-size: 20px;
 }
 
 .drop-down:hover,
@@ -140,9 +135,9 @@ td {
 
 .stats-main {
     font-family: "Roboto Mono", monospace;
-    font-size: 25px;
-    padding-left: 25px;
-    padding-right: 15px;;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 5px;;
 }
 
 .isLow {
@@ -150,9 +145,9 @@ td {
 }
 
 input {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 20px;
-  margin-left: 250px;
+  margin-left: 120px;
   padding: 10px;
   border: 4px solid black;
 }
@@ -165,5 +160,5 @@ input:focus {
   margin-left: 100px;
   padding: 0px;
   font-family: monospace;
-  font-size: 25px; 
+  font-size: 15px; 
 }
