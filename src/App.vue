@@ -5,7 +5,12 @@
     </div>
     <div>
       <div>
-        <input type="password" v-model="password" v-if="!isAuth" placeholder="Enter Password">
+        <input
+          type="password"
+          v-model="password"
+          v-if="!isAuth"
+          placeholder="Enter Password"
+        />
       </div>
       <view-body v-if="isAuth" />
     </div>
@@ -13,33 +18,33 @@
 </template>
 
 <script>
-
-import Label from './components/Label';
-import Body from './components/Body';
+import Label from "./components/Label";
+import Body from "./components/Body";
 
 export default {
-  name: 'app',
-  data () {
+  name: "app",
+  data() {
     return {
-      msg: 'Welcome to Your Vue.js App',
+      msg: "Welcome to Your Vue.js App",
       isAuth: false,
-      password: ''
-    }
+      password: ""
+    };
   },
   components: {
     dateLabel: Label,
-    viewBody: Body,
+    viewBody: Body
   },
   watch: {
-    password: function () {
-      if (this.password === 'Mujtaba') {
+    password: function() {
+      if (this.password === "6858222") {
         this.isAuth = true;
       }
     }
+  },
+  created() {
+    if (this.$route.path.split("/")[1] === "detail") {
+      this.isAuth = true;
+    }
   }
-}
+};
 </script>
-
-<style lang="scss">
-  
-</style>
