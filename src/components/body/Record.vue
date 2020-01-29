@@ -7,7 +7,7 @@
         </option>
       </select>
       <span class="tick" v-if="recorded">
-        <img src="src/components/body/tick.png" alt="tick-logo" />
+        <img src="tick.png" alt="tick-logo" />
         <span>Marked {{ attStatus }}</span>
       </span>
     </div>
@@ -66,8 +66,6 @@ export default {
     },
     Record: function(id, attType) {
       this.attStatus = (attType == 'present') ? 'Present' : 'Absent';
-      console.log(id);
-      console.log(attType);
       axios
         .post("https://fierce-falls-54022.herokuapp.com/api/recordAttendance/" + `${id}`, {
           attType
