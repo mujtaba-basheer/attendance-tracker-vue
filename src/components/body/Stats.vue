@@ -5,7 +5,7 @@
         <td class="stats-head" align="center">Sl No</td>
         <td class="stats-head" align="center">Subject Name</td>
         <td class="stats-head" align="center">Percentage</td>
-        <td class="stats-head" align="center">Action</td>
+        <td class="stats-head" align="center">Info</td>
       </tr>
       <tr v-for="(subject, index) in subjects" :key="index" class="tbl-body">
         <td class="stats-main">{{ index + 1 }}</td>
@@ -14,8 +14,8 @@
           {{ subject.details.percent }} %
         </td>
         <td class="stats-main">
-          <span class="detail" @click="setSubDetails(subjects[index])">
-            &#60;- Details ->
+          <span @click="setSubDetails(subjects[index])">
+            <img src="info.png" alt="info-logo">
           </span>
         </td>
       </tr>
@@ -42,7 +42,7 @@ export default {
   },
   methods: {
       setSubDetails: function (subId) {
-          const route = `/detail/${subId._id}`;
+          const route = `/${subId._id}`;
           window.location.href = route;
       }
   }

@@ -6,5 +6,5 @@ export const routes = [
     { path: '/', component: Record },
     { path: '/record', component: Record },
     { path: '/stats', component: Stats },
-    { path: '/detail/:id', component: SubDetails }
+    { path: '/:id', component: SubDetails }
 ]

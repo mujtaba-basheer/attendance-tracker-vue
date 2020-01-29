@@ -58,9 +58,8 @@ export default {
     };
   },
   computed: {},
-  mounted() {
+  created () {
     const subId = this.$route.params.id;
-    console.log(this.$route.path.split('/')[1]);
     axios
       .get("https://fierce-falls-54022.herokuapp.com/api/getSub/" + `${subId}`)
       .then(res => {
