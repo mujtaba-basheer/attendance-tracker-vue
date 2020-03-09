@@ -44,21 +44,32 @@
         </tr>
       </table>
     </div>
+    <hr />
+    <button class="s-view" @click="simView">{{ s_text }} Simulator</button>
+    <simulator
+      v-if="showSim"
+      :total="subject.details.total"
+      :present="subject.details.attended"
+      align="center"
+    />
   </div>
 </template>
 
 <script>
 import axios from "axios";
+import Simulator from "./Simulator";
 
 export default {
   data() {
     return {
       subject: {},
-      last7: []
+      last7: [],
+      s_text: "Show",
+      showSim: false
     };
   },
   computed: {},
-  created () {
+  created() {
     const subId = this.$route.params.id;
     axios
       .get("https://fierce-falls-54022.herokuapp.com/api/getSub/" + `${subId}`)
@@ -67,6 +78,15 @@ export default {
         this.last7 = res.data.doc.details.last7.reverse();
       })
       .catch(err => console.error(err));
+  },
+  components: {
+    simulator: Simulator
+  },
+  methods: {
+    simView: function() {
+      this.s_text = this.showSim ? "Show" : "Hide";
+      this.showSim = !this.showSim;
+    }
   }
 };
 </script>
